@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Produtos Orgânicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao sistema de venda de produtos orgânicos!</h1>
+        
+        <div id="produtos">
+            <h2>Produtos disponíveis:</h2>
+            <ul>
+                <li>
+                    <span class="nome">Banana</span>
+                    <span class="preco">R$ 2,50</span>
+                    <button onclick="adicionarProduto('banana')">Adicionar</button>
+                </li>
+                <li>
+                    <span class="nome">Maçã</span>
+                    <span class="preco">R$ 3,00</span>
+                    <button onclick="adicionarProduto('maca')">Adicionar</button>
+                </li>
+                <li>
+                    <span class="nome">Laranja</span>
+                    <span class="preco">R$ 2,75</span>
+                    <button onclick="adicionarProduto('laranja')">Adicionar</button>
+                </li>
+                <li>
+                    <span class="nome">Abacate</span>
+                    <span class="preco">R$ 5,50</span>
+                    <button onclick="adicionarProduto('abacate')">Adicionar</button>
+                </li>
+                <li>
+                    <span class="nome">Morango</span>
+                    <span class="preco">R$ 4,00</span>
+                    <button onclick="adicionarProduto('morango')">Adicionar</button>
+                </li>
+            </ul>
+        </div>
+
+        <div id="carrinho">
+            <h2>Seu Carrinho:</h2>
+            <ul id="lista-carrinho">
+                <!-- Os itens do carrinho serão adicionados aqui dinamicamente -->
+            </ul>
+            <p>Total a pagar: <span id="total">R$ 0,00</span></p>
+        </div>
+
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
