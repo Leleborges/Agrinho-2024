@@ -8,48 +8,88 @@
 </head>
 <body>
     <div class="container">
-        <h1>Bem-vindo ao sistema de venda de produtos orgânicos!</h1>
+        <header>
+            <h1>Sistema de Venda de Produtos Orgânicos</h1>
+        </header>
         
-        <div id="produtos">
-            <h2>Produtos disponíveis:</h2>
-            <ul>
-                <li>
-                    <span class="nome">Banana</span>
-                    <span class="preco">R$ 2,50</span>
-                    <button onclick="adicionarProduto('banana')">Adicionar</button>
-                </li>
-                <li>
-                    <span class="nome">Maçã</span>
-                    <span class="preco">R$ 3,00</span>
-                    <button onclick="adicionarProduto('maca')">Adicionar</button>
-                </li>
-                <li>
-                    <span class="nome">Laranja</span>
-                    <span class="preco">R$ 2,75</span>
-                    <button onclick="adicionarProduto('laranja')">Adicionar</button>
-                </li>
-                <li>
-                    <span class="nome">Abacate</span>
-                    <span class="preco">R$ 5,50</span>
-                    <button onclick="adicionarProduto('abacate')">Adicionar</button>
-                </li>
-                <li>
-                    <span class="nome">Morango</span>
-                    <span class="preco">R$ 4,00</span>
-                    <button onclick="adicionarProduto('morango')">Adicionar</button>
-                </li>
-            </ul>
-        </div>
+        <section class="content">
+            <div class="produtos">
+                <h2>Produtos disponíveis:</h2>
+                <ul id="lista-produtos">
+                    <li>
+                        <span class="nome">Banana</span>
+                        <span class="preco">R$ 2,50</span>
+                        <button onclick="adicionarProduto('Banana')">Adicionar</button>
+                    </li>
+                    <li>
+                        <span class="nome">Maçã</span>
+                        <span class="preco">R$ 3,00</span>
+                        <button onclick="adicionarProduto('Maçã')">Adicionar</button>
+                    </li>
+                    <li>
+                        <span class="nome">Laranja</span>
+                        <span class="preco">R$ 2,75</span>
+                        <button onclick="adicionarProduto('Laranja')">Adicionar</button>
+                    </li>
+                    <li>
+                        <span class="nome">Abacate</span>
+                        <span class="preco">R$ 5,50</span>
+                        <button onclick="adicionarProduto('Abacate')">Adicionar</button>
+                    </li>
+                    <li>
+                        <span class="nome">Morango</span>
+                        <span class="preco">R$ 4,00</span>
+                        <button onclick="adicionarProduto('Morango')">Adicionar</button>
+                    </li>
+                    <li>
+                        <span class="nome">Pêra</span>
+                        <span class="preco">R$ 3,25</span>
+                        <button onclick="adicionarProduto('Pêra')">Adicionar</button>
+                    </li>
+                    <li>
+                        <span class="nome">Uva</span>
+                        <span class="preco">R$ 4,50</span>
+                        <button onclick="adicionarProduto('Uva')">Adicionar</button>
+                    </li>
+                    <li>
+                        <span class="nome">Cenoura</span>
+                        <span class="preco">R$ 1,75</span>
+                        <button onclick="adicionarProduto('Cenoura')">Adicionar</button>
+                    </li>
+                    <li>
+                        <span class="nome">Batata</span>
+                        <span class="preco">R$ 2,00</span>
+                        <button onclick="adicionarProduto('Batata')">Adicionar</button>
+                    </li>
+                    <li>
+                        <span class="nome">Couve</span>
+                        <span class="preco">R$ 2,25</span>
+                        <button onclick="adicionarProduto('Couve')">Adicionar</button>
+                    </li>
+                </ul>
+            </div>
 
-        <div id="carrinho">
-            <h2>Seu Carrinho:</h2>
-            <ul id="lista-carrinho">
-                <!-- Os itens do carrinho serão adicionados aqui dinamicamente -->
-            </ul>
-            <p>Total a pagar: <span id="total">R$ 0,00</span></p>
-        </div>
+            <div class="carrinho">
+                <h2>Seu Carrinho:</h2>
+                <ul id="lista-carrinho">
+                    <!-- Os itens do carrinho serão adicionados aqui dinamicamente -->
+                </ul>
+                <div class="total">
+                    <p>Total a pagar: <span id="total">R$ 0,00</span></p>
+                </div>
+                <button id="finalizar-compra">Finalizar Compra</button>
+            </div>
+        </section>
 
-        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <section class="importancia">
+            <h2>Por que os alimentos orgânicos são importantes?</h2>
+            <p>Os alimentos orgânicos desempenham um papel crucial na promoção da saúde humana e na preservação ambiental. Cultivados sem o uso de pesticidas sintéticos, herbicidas ou fertilizantes químicos, eles reduzem significativamente a exposição a substâncias tóxicas. Além de beneficiar os consumidores, os métodos agrícolas orgânicos protegem a biodiversidade, promovem o manejo sustentável do solo e preservam os recursos hídricos. Escolher alimentos orgânicos não é apenas uma decisão saudável, mas também uma escolha consciente em apoio a práticas agrícolas que sustentam a saúde do planeta para as futuras gerações.</p>
+        </section>
+
+        <section class="importancia">
+            <h2>A importância do alimento do campo para a cidade</h2>
+            <p>O trajeto dos alimentos do campo para a cidade é essencial para garantir que produtos frescos e saudáveis cheguem à mesa dos consumidores. Esse processo envolve várias etapas, desde o cultivo até a distribuição, sendo fundamental para a economia local e para a alimentação de milhões de pessoas em áreas urbanas.</p>
+        </section>
     </div>
 
     <script src="script.js"></script>

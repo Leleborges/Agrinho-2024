@@ -1,70 +1,134 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que a página ocupe pelo menos toda a altura da viewport */
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
+    max-width: 1200px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza todo o conteúdo */
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1, h2 {
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Espaçamento inferior do header */
 }
 
-#produtos, #carrinho {
-    margin-bottom: 20px;
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-ul {
-    list-style-type: none;
+.produtos, .carrinho, .importancia, .importancia-cidade, .transporte {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto; /* Centraliza na horizontal */
+}
+
+.titulo-verde {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; /* Centraliza o texto do título */
+    margin: -20px -20px 20px -20px; /* Ajusta margem para centralizar */
+}
+
+.produtos ul, .carrinho ul, .importancia p, .importancia-cidade p, .transporte p {
+    list-style: none;
     padding: 0;
+    text-align: center; /* Centraliza textos dentro dos quadrados */
 }
 
-li {
-    margin-bottom: 10px;
+.produtos li, .carrinho li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nome {
-    flex: 1;
-}
-
-.preco {
-    margin-left: 20px;
-    min-width: 60px;
-    text-align: right;
+    margin-bottom: 10px;
 }
 
 button {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
+    background: #4CAF50;
+    color: #fff;
     border: none;
+    padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
 button:hover {
+    background: #45a049;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto do total */
+}
+
+.carrinho {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.carrinho ul {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.carrinho li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.carrinho li:last-child {
+    border-bottom: none;
+}
+
+#finalizar-compra {
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#finalizar-compra:hover {
     background-color: #45a049;
 }
 
-#total {
-    font-weight: bold;
-}
-
-button.finalizar {
-    background-color: #f44336;
-}
-
-button.finalizar:hover {
-    background-color: #d32f2f;
+.hidden {
+    display: none;
 }
