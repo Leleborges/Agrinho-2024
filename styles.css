@@ -60,7 +60,7 @@ header {
     text-align: center; /* Centraliza textos dentro dos quadrados */
 }
 
-.produtos li, .carrinho li {
+.produtos li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,3 +132,10 @@ button:hover {
 .hidden {
     display: none;
 }
+
+span.preco {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1; /* opcional */
+  }
